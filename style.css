@@ -1,0 +1,141 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.logo{
+    width: 32px;
+    height: 32px;
+
+}
+
+.logoname{
+    font-size: 20px;
+    
+}
+
+.arimo{
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.navbar-menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 24px;
+    font-size: 16px;
+}
+
+.navbar-button{
+    background-color:#1D4ED8;
+    width: 188px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+
+    
+}
+
+.italic{
+    font-style: italic;
+}
+
+.banner-description{
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+
+}
+
+.banner-button{
+    width: 282px;
+    height: 74px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.banner-container{
+    background-image: url('/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 871px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.speakers-heading{
+    font-size: 56px;
+    font-weight: bold;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.speakers-card{
+    border-radius: 16px;
+    border: 1px rgba(128, 128, 128, 0.519) solid;
+    overflow: hidden;
+}
+
+.card-image{
+    width: 100%;
+}
+
+.card-details{
+    padding: 24px;
+}
+
+.category{
+    color: #1D4ED8;
+}
+
+.designation{
+    color: gray;
+}
+
+.speakers-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 0 120px;
+}
