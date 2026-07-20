@@ -1,83 +1,89 @@
-body{
-    padding: 0%;
-    margin: 0%;
+/* ==========================================
+   GLOBAL & TYPOGRAPHY STYLES
+   ========================================== */
+
+body {
+    padding: 0;
+    margin: 0;
 }
-.logo-div{
+
+.arimo {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+li::marker {
+    color: #2563EB;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.logo-div {
     display: flex;
     align-items: center;
     gap: 5px;
-
 }
-.logo{
+
+.logo {
     width: 32px;
     height: 32px;
+}
 
-}
-.logoname{
+.logoname {
     font-size: 20px;
-    
+    margin: 0;
 }
-.arimo{
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-.inter{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-.navbar-menu{
+
+.navbar-menu {
     display: flex;
     justify-content: space-around;
     list-style: none;
     gap: 24px;
     font-size: 16px;
 }
-.navbar-button{
-    background-color:#1D4ED8;
+
+.navbar-button {
+    background-color: #1D4ED8;
     width: 188px;
     height: 48px;
     color: white;
     font-size: 16px;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
 }
-.navbar-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 120px;
 
-    
-}
-.italic{
-    font-style: italic;
-}
-.banner-description{
-    color: white;
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-}
-.banner-title{
-    color: white;
-    font-size: 80px;
-    text-align: center;
+/* ==========================================
+   HERO / BANNER SECTION
+   ========================================== */
 
-}
-.banner-button{
-    width: 282px;
-    height: 74px;
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #1D4ED8;
-    color: white;
-    border: none;
-    border-radius: 8px;
-}
-.banner-container{
-    background-image: url('/banner.jpg');
+.banner-container {
+    background-image: url('./banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,147 +94,209 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
 }
-.speakers-heading{
+
+.banner-title {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.banner-description {
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-button {
+    width: 282px;
+    height: 74px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ==========================================
+   SPEAKERS SECTION
+   ========================================== */
+
+.speakers-heading {
     font-size: 56px;
     font-weight: bold;
     margin-top: 80px;
+    margin-bottom: 40px;
     text-align: center;
 }
-.speakers-card{
-    border-radius: 16px;
-    border: 1px #80808084 solid;
-    overflow: hidden;
-}
-.card-image{
-    width: 100%;
-}
-.card-details{
-    padding: 24px;
-}
-.category{
-    color: #1D4ED8;
-}
-.designation{
-    color: gray;
-}
-.speakers-card-container{
+
+.speakers-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     padding: 0 120px;
 }
-.footer-card-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
-    padding: 0 120;
-    margin-bottom: 80px;
-    margin-right: 60px;
-    margin-left: 60px;
-}
-.footer-card{
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    padding: 24px;
+
+.speakers-card {
+    border-radius: 16px;
+    border: 1px rgba(128, 128, 128, 0.52) solid;
     overflow: hidden;
 }
-.footer-title{
+
+.card-image {
+    width: 100%;
+    display: block;
+}
+
+.card-details {
+    padding: 24px;
+}
+
+.category {
+    color: #1D4ED8;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.name {
+    margin: 0 0 8px 0;
+}
+
+.designation {
+    color: gray;
+    margin: 0;
+}
+
+/* ==========================================
+   PRICING / SPOT SECTION
+   ========================================== */
+
+.footer-parent {
+    padding-top: 80px;
+}
+
+.footer-title {
     font-size: 48px;
     font-weight: bold;
     color: #0D1B2A;
     text-align: center;
+    margin: 0 0 8px 0;
 }
-.footer-description{
+
+.footer-description {
     text-align: center;
     font-size: 16px;
-    color: #57575#7;
+    color: #575757;
+    margin: 0 0 48px 0;
 }
-.standard{
+
+.footer-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 0 120px;
+    margin-bottom: 80px;
+}
+
+.footer-card {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.standard, .team {
     font-size: 13px;
-    font-weight:600;
+    font-weight: 600;
     color: #888888;
+    margin: 0 0 8px 0;
 }
-.first-price{
+
+.first-price, .third-price {
     font-size: 44px;
     font-weight: bold;
     color: #0D1B2A;
     margin: 0;
 }
-.person-a{
+
+.person-a, .people {
     color: #888888;
+    margin: 4px 0 16px 0;
 }
-li::marker{
-    color: #2563EB;
-}
-ul{
-    padding-left: 0;
-    list-style-position: inside;
-}
-.standard-button{
+
+.standard-button {
     font-size: 14px;
     font-weight: 600;
     color: #2563EB;
-    width: 304px;
+    width: 100%;
     height: 43px;
-    border-color: #2563EB;
+    border: 1px solid #2563EB;
     border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
 }
-.pro{
+
+/* Pro Card Specific Theme */
+.pro-card {
+    background-color: #0D1B2A;
+    border: 1px solid #0D1B2A;
+}
+
+.pro {
     font-size: 13px;
     font-weight: 600;
     color: #93C5FD;
+    margin: 0 0 8px 0;
 }
-.second-price{
+
+.second-price {
     font-size: 44px;
     font-weight: bold;
     color: #FFFFFF;
     margin: 0;
 }
-.person-b{
+
+.person-b {
     color: #888888;
+    margin: 4px 0 16px 0;
 }
-.pro-button{
-    width: 304px;
+
+.second-list {
+    color: #E5E7EB;
+}
+
+.pro-button {
+    width: 100%;
     height: 43px;
     color: #FFFFFF;
     background-color: #2563EB;
     border: none;
     border-radius: 8px;
-}
-.pro-card-cotainer{
-    background-color: #0D1B2A;
-    border-radius: 12px;
-}
-.second-list{
-    color: #E5E7EB;
-}
-.team{
-    font-size: 13px;
+    cursor: pointer;
     font-weight: 600;
-    color: #888888;
 }
-.third-price{
-    font-weight: bold;
-    font-size: 44px;
-    margin: 0;
-}
-.people{
-    color: #888888;
-}
-.contact-button{
-    width: 304px;
+
+.contact-button {
+    width: 100%;
     height: 43px;
     font-weight: 600;
     font-size: 14px;
     color: #0D1B2A;
+    border: 1px solid #0D1B2A;
     border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
 }
 
-
 /* ==========================================
-   VENUE SECTION STYLES
+   VENUE SECTION
    ========================================== */
 
 .venue-container {
@@ -257,7 +325,6 @@ ul{
     align-items: stretch;
 }
 
-/* Left Column: Information Card */
 .venue-info {
     border: 1px solid #E5E7EB;
     border-radius: 16px;
@@ -312,7 +379,6 @@ ul{
     cursor: pointer;
 }
 
-/* Right Column: Interactive Map Frame */
 .venue-map {
     border-radius: 16px;
     overflow: hidden;
