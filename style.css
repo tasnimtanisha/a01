@@ -124,6 +124,9 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
     padding: 0 120;
+    margin-bottom: 80px;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 .footer-card{
     border: 1px solid #E5E7EB;
@@ -196,6 +199,7 @@ ul{
 }
 .pro-card-cotainer{
     background-color: #0D1B2A;
+    border-radius: 12px;
 }
 .second-list{
     color: #E5E7EB;
@@ -222,3 +226,96 @@ ul{
     border-radius: 8px;
 }
 
+
+/* ==========================================
+   VENUE SECTION STYLES
+   ========================================== */
+
+.venue-container {
+    padding: 80px 120px;
+}
+
+.venue-heading {
+    font-size: 56px;
+    font-weight: bold;
+    color: #0D1B2A;
+    text-align: center;
+    margin: 0 0 12px 0;
+}
+
+.venue-description {
+    text-align: center;
+    font-size: 16px;
+    color: #575757;
+    margin: 0 0 48px 0;
+}
+
+.venue-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: stretch;
+}
+
+/* Left Column: Information Card */
+.venue-info {
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.venue-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0D1B2A;
+    margin: 0 0 8px 0;
+}
+
+.venue-address {
+    font-size: 16px;
+    color: #575757;
+    margin: 0 0 24px 0;
+}
+
+.venue-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.highlight-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0D1B2A;
+    margin: 0 0 4px 0;
+}
+
+.highlight-desc {
+    font-size: 14px;
+    color: #575757;
+    margin: 0;
+}
+
+.venue-button {
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Right Column: Interactive Map Frame */
+.venue-map {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #E5E7EB;
+    min-height: 400px;
+}
