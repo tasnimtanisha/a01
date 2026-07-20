@@ -2,7 +2,6 @@ body{
     padding: 0%;
     margin: 0%;
 }
-
 .logo-div{
     display: flex;
     align-items: center;
@@ -14,25 +13,20 @@ body{
     height: 32px;
 
 }
-
 .logoname{
     font-size: 20px;
     
 }
-
 .arimo{
   font-family: "Arimo", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 .inter{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
-
 .navbar-menu{
     display: flex;
     justify-content: space-around;
@@ -40,7 +34,6 @@ body{
     gap: 24px;
     font-size: 16px;
 }
-
 .navbar-button{
     background-color:#1D4ED8;
     width: 188px;
@@ -50,7 +43,6 @@ body{
     border-radius: 8px;
     border: none;
 }
-
 .navbar-container{
     display: flex;
     justify-content: space-between;
@@ -59,25 +51,21 @@ body{
 
     
 }
-
 .italic{
     font-style: italic;
 }
-
 .banner-description{
     color: white;
     width: 50%;
     text-align: center;
     margin: 0 auto;
 }
-
 .banner-title{
     color: white;
     font-size: 80px;
     text-align: center;
 
 }
-
 .banner-button{
     width: 282px;
     height: 74px;
@@ -88,7 +76,6 @@ body{
     border: none;
     border-radius: 8px;
 }
-
 .banner-container{
     background-image: url('/banner.jpg');
     background-repeat: no-repeat;
@@ -103,44 +90,135 @@ body{
     align-items: center;
 
 }
-
 .speakers-heading{
     font-size: 56px;
     font-weight: bold;
     margin-top: 80px;
     text-align: center;
 }
-
 .speakers-card{
     border-radius: 16px;
-    border: 1px rgba(128, 128, 128, 0.519) solid;
+    border: 1px #80808084 solid;
     overflow: hidden;
 }
-
 .card-image{
     width: 100%;
 }
-
 .card-details{
     padding: 24px;
 }
-
 .category{
     color: #1D4ED8;
 }
-
 .designation{
     color: gray;
 }
-
 .speakers-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     padding: 0 120px;
 }
-
-.footer-parent{
-    text-align: center;
-    
+.footer-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    padding: 0 120;
 }
+.footer-card{
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    overflow: hidden;
+}
+.footer-title{
+    font-size: 48px;
+    font-weight: bold;
+    color: #0D1B2A;
+    text-align: center;
+}
+.footer-description{
+    text-align: center;
+    font-size: 16px;
+    color: #57575#7;
+}
+.standard{
+    font-size: 13px;
+    font-weight:600;
+    color: #888888;
+}
+.first-price{
+    font-size: 44px;
+    font-weight: bold;
+    color: #0D1B2A;
+    margin: 0;
+}
+.person-a{
+    color: #888888;
+}
+li::marker{
+    color: #2563EB;
+}
+ul{
+    padding-left: 0;
+    list-style-position: inside;
+}
+.standard-button{
+    font-size: 14px;
+    font-weight: 600;
+    color: #2563EB;
+    width: 304px;
+    height: 43px;
+    border-color: #2563EB;
+    border-radius: 8px;
+}
+.pro{
+    font-size: 13px;
+    font-weight: 600;
+    color: #93C5FD;
+}
+.second-price{
+    font-size: 44px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+}
+.person-b{
+    color: #888888;
+}
+.pro-button{
+    width: 304px;
+    height: 43px;
+    color: #FFFFFF;
+    background-color: #2563EB;
+    border: none;
+    border-radius: 8px;
+}
+.pro-card-cotainer{
+    background-color: #0D1B2A;
+}
+.second-list{
+    color: #E5E7EB;
+}
+.team{
+    font-size: 13px;
+    font-weight: 600;
+    color: #888888;
+}
+.third-price{
+    font-weight: bold;
+    font-size: 44px;
+    margin: 0;
+}
+.people{
+    color: #888888;
+}
+.contact-button{
+    width: 304px;
+    height: 43px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0D1B2A;
+    border-radius: 8px;
+}
+
